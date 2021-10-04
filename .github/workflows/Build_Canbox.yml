@@ -24,7 +24,7 @@ on:
     paths:
       - 'Config_Files/CanBox.config'
   schedule:
-    - cron: 0 8 * * 4
+    - cron: 0 ２ * * ５
   watch:
     types: started
 

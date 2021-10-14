@@ -18,7 +18,8 @@ sed -i 's/192.168.1.1/8.1.1.1/g' package/base-files/files/bin/config_generate
 # 修改机器名称
 sed -i 's/OpenWrt/CM520-79F-Two/g' package/base-files/files/bin/config_generate
 # 修改机器初始密码
-sed -i 's/root:$2y$10$S/DXBeqbZm17Be9fYRxclOAU99JXgLx.ijUv2XEVgxDiUTY6K.F8m:0:0:99999:7:::/root::0:0:99999:7:::/g' package/base-files/files/etc/shadow
+sed -i 's/root:$2y$10$S/DXBeqbZm17Be9fYRxclOAU99JXgLx.ijUv2XEVgxDiUTY6K.F8m:0:0:99999:7:::/root:x:0:0:99999:7:::/g' package/base-files/files/etc/shadow
+sed -i 's/root:$2y$10$S/DXBeqbZm17Be9fYRxclOAU99JXgLx.ijUv2XEVgxDiUTY6K.F8m:0:0:99999:7:::/root:x:0:0:99999:7:::/g' package/base-files/files/etc/passwd
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default

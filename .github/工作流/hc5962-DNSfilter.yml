@@ -22,7 +22,7 @@ on:
     branches:
       - master
     paths:
-      - 'hc5962.config'
+      - 'hc5962-DNSfilter.config'
   schedule:
     - cron: 0 8 * * 5
   watch:
@@ -32,7 +32,7 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: Config_Files/hc5962.config
+  CONFIG_FILE: Config_Files/hc5962-DNSfilter.config
   DIY_P1_SH: DIY/diy-part1-hc5962.sh
   DIY_P2_SH: DIY/diy-part2.sh
   UPLOAD_BIN_DIR: false

@@ -16,7 +16,7 @@ on:
     inputs:
       ssh:
         description: 'SSH connection to Actions'
-        required: 'false'
+        required: false
         default: 'false'
   push:
     branches:
@@ -193,6 +193,6 @@ jobs:
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       with:
         keep_latest: 14
-        delete_tags: 'true'
+        delete_tags: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -20,9 +20,9 @@ on:
         default: 'false'
   push:
     branches:
-    - master
+      - master
     paths:
-    - 'Config_Files/CanBox_Lienol.config'
+      - 'Config_Files/CanBox_Lienol.config'
   schedule:
     - cron: 0 6 * * 4
   watch:

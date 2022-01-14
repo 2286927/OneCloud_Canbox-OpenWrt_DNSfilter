@@ -22,7 +22,7 @@ on:
     branches:
       - master
     paths:
-      - 'hc5962-DNSfilter.config'
+      - 'hc5962-DNSfilter-Lienol.config'
   schedule:
     - cron: 0 8 * * 5
   watch:

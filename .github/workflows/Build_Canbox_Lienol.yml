@@ -24,7 +24,7 @@ on:
     paths:
       - 'Config_Files/CanBox_Lienol.config'
   schedule:
-    - cron: 0 6 * * 4
+    - cron: 0 6 * * 5
   watch:
     types: started
 

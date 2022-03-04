@@ -24,9 +24,10 @@ sed -i 's/root::0:0:99999:7:::/root::0:0:99999:7:::/g' package/base-files/files/
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 #sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
 #sed -i '$a src-git dockerman https://github.com/lisaac/luci-app-dockerman' feeds.conf.default
-sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
+#sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
 git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
 git clone https://github.com/kenzok8/small.git package/small
+git clone https://github.com/lisaac/luci-app-dockerman.git package/dockerman
 
 #Add The Theme：luci-theme-opentomcat
 #git clone https://github.com/Cosme927/luci-theme-opentomcat package/luci-theme-opentomcat

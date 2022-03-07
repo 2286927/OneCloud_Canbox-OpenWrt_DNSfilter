@@ -24,7 +24,7 @@ on:
     paths:
       - 'OneCloud.config'
   schedule:
-    - cron: 0 8 * * 5
+    - cron: 0 4 * * 5
   watch:
     types: started
 

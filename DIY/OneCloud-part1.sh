@@ -13,7 +13,7 @@
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 # Modify default IP
-sed -i 's/192.168.1.1/8.1.1.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/1.1.1.1/g' package/base-files/files/bin/config_generate
 # 修改机器名称
 sed -i 's/OpenWrt/OneCloud/g' package/base-files/files/bin/config_generate
 # 修改机器初始密码
@@ -27,5 +27,5 @@ sed -i 's/OpenWrt/OneCloud/g' package/base-files/files/bin/config_generate
 git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
 git clone https://github.com/kenzok8/small.git package/small
 git clone https://github.com/lisaac/luci-app-dockerman.git package/dockerman
-# echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
-# echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
+echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default

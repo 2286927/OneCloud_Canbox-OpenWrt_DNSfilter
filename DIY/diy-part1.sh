@@ -27,7 +27,7 @@ sed -i 's/OpenWrt/CM520-79F/g' package/base-files/files/bin/config_generate
 #sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
 git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
 git clone https://github.com/kenzok8/small.git package/small
-git clone https://github.com/lisaac/luci-app-dockerman.git package/dockerman
+#git clone https://github.com/lisaac/luci-app-dockerman.git package/dockerman
 
 #Add The Theme：luci-theme-opentomcat
 #git clone https://github.com/Cosme927/luci-theme-opentomcat package/luci-theme-opentomcat

@@ -33,7 +33,7 @@ sed -i '$a src-git kiddin9 https://github.com/kiddin9/openwrt-packages' feeds.co
 #Add The Theme：luci-theme-opentomcat
 #git clone https://github.com/Cosme927/luci-theme-opentomcat package/luci-theme-opentomcat
 # zerotier
-sed -i 's/PKG_VERSION:=.*/PKG_VERSION:=1.8.4/g' feeds/kiddin9/luci-app-zerotier/Makefile
+#sed -i 's/PKG_VERSION:=.*/PKG_VERSION:=1.8.4/g' feeds/kiddin9/luci-app-zerotier/Makefile
 #sed -i 's/PKG_HASH:=.*/PKG_HASH:=2866a4ef9193cca0a9f0fe528a0dea00c13cb0fd714bf388a0300cb6f3639b3b/g' feeds/packages/net/zerotier/Makefile
 #rm -rf feeds/packages/net/zerotier
 #cp -rf $GITHUB_WORKSPACE/general/zerotier feeds/packages/net

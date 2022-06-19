@@ -23,8 +23,8 @@ on:
       - master
     paths:
       - 'Config_Files/CanBox_Lienol.config'
-  schedule:
-    - cron: 0 6 * * 5
+#  schedule:
+#    - cron: 0 6 * * 5
   watch:
     types: started
 

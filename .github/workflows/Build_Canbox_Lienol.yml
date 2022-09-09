@@ -30,7 +30,7 @@ on:
 
 env:
   REPO_URL: https://github.com/Lienol/openwrt
-  REPO_BRANCH: 21.02
+  REPO_BRANCH: 22.03
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: Config_Files/CanBox_Lienol.config
   DIY_P1_SH: diy-part1.sh
@@ -44,7 +44,7 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout
@@ -56,7 +56,7 @@ jobs:
       run: |
         sudo rm -rf /etc/apt/sources.list.d/* /usr/share/dotnet /usr/local/lib/android /opt/ghc
         sudo -E apt-get -qq update
-        sudo -E apt-get -qq install $(curl -fsSL git.io/depends-ubuntu-1804)
+        sudo -E apt-get -qq install $(curl -fsSL git.io/depends-ubuntu-latest)
         sudo -E apt-get -qq autoremove --purge
         sudo -E apt-get -qq clean
         sudo timedatectl set-timezone "$TZ"

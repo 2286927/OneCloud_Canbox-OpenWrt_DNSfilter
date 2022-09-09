@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: CanBox_Lienol_Bypass_route
+name: CanBox_Bypass_route
 
 on:
   repository_dispatch:
@@ -159,7 +159,7 @@ jobs:
       id: tag
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       run: |
-        echo "::set-output name=release_tag::CanBox_CM520-79f-Lienol-$(date +"%Y.%m.%d-%H%M")"
+        echo "::set-output name=release_tag::CanBox_CM520-79f-Bypass route-$(date +"%Y.%m.%d-%H%M")"
         touch release.txt
         [ $UPLOAD_COWTRANSFER = true ] && echo "🔗 [Cowtransfer](${{ steps.cowtransfer.outputs.url }})" >> release.txt
         [ $UPLOAD_WETRANSFER = true ] && echo "🔗 [WeTransfer](${{ steps.wetransfer.outputs.url }})" >> release.txt

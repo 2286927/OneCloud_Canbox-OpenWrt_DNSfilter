@@ -30,7 +30,7 @@ on:
 
 env:
   REPO_URL: https://github.com/Lienol/openwrt
-  REPO_BRANCH: 21.02
+  REPO_BRANCH: 22.03
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: Config_Files/OneCloud.config
   DIY_P1_SH: DIY/OneCloud-part1.sh

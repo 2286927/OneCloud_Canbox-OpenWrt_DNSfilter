@@ -17,8 +17,8 @@ echo -e "#max-ttl=600\nneg-ttl=600\nmin-cache-ttl=3600" >> package/network/servi
 # git clone -b lede https://github.com/pymumu/luci-app-smartdns.git feeds/luci/applications/luci-app-smartdns
 #git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
 #git clone https://github.com/kenzok8/small.git package/small
-sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
-sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
+# sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+# sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 # sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
 # git clone https://github.com/garypang13/luci-app-bypass.git package/luci-app-bypass
 # git clone https://github.com/garypang13/smartdns-le package/smartdns-le

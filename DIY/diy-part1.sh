@@ -27,7 +27,7 @@
 #sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
 #git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
 #git clone https://github.com/kenzok8/small.git package/small
-sed -i '$a src-git dnsfilter https://github.com/kiddin9/luci-app-dnsfilter' feeds.conf.default
+# sed -i '$a src-git dnsfilter https://github.com/kiddin9/luci-app-dnsfilter' feeds.conf.default
 sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 #git clone https://github.com/lisaac/luci-app-dockerman.git package/dockerman

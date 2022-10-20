@@ -202,4 +202,4 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         body: |
           * 星际宝盒CM520-79F固件
-          *Default username: root
+          * Default username: root

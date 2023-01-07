@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Canbox_immortalwrt_AdGuardHome
+name: Canbox_immortalwrt_DNSfilter
 
 on:
   repository_dispatch:

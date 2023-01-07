@@ -213,4 +213,5 @@ jobs:
         body: |
           * 星际宝盒CM520-79F_Two&immortalwrt固件
           * DNSfilter
+          * PS rom
           * Default username: root

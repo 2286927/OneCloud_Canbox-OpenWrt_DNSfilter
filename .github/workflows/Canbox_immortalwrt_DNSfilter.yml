@@ -32,8 +32,8 @@ env:
   #REPO_URL: https://github.com/Lienol/openwrt
   #REPO_BRANCH: 21.02
   REPO_URL: https://github.com/immortalwrt/immortalwrt
-  #REPO_BRANCH: openwrt-21.02
-  REPO_BRANCH: master
+  REPO_BRANCH: openwrt-21.02
+  #REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: Config_Files/CanBox_immortalwrt_DNSfilter.config
   DIY_P1_SH: DIY/diy-part1-immortalwrt.sh

@@ -31,10 +31,12 @@
 #sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 #sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 #git clone https://github.com/kenzok8/small-package package/small-package
-git clone https://github.com/kiddin9/openwrt-packages package/kiddin9
+#git clone https://github.com/kiddin9/openwrt-packages package/kiddin9
+git clone https://github.com/kenzok8/small-package package/small-package
+#git clone https://github.com/bootli/luci-app-turboacc.git package/small-package/luci-app-turboacc
+git clone https://github.com/deplives/luci-app-turboacc.git package/small-package/luci-app-turboacc
+git clone https://github.com/bootli/luci-app-ddns-go.git package/ddns-go
 #  git clone https://github.com/lisaac/luci-app-dockerman.git package/dockerman
-#  git clone https://github.com/kenzok8/small-package package/small-package
-#  git clone https://github.com/bootli/luci-app-turboacc.git package/small-package/luci-app-turboacc
 #git clone -b master --single-branch https://github.com/kiddin9/openwrt-packages/luci-app-turboacc package/small-package/luci-app-turboacc
 
 #Add The Theme：luci-theme-opentomcat

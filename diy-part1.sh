@@ -29,7 +29,11 @@
 #sed -i '$a src-git kiddin9 https://github.com/kiddin9/openwrt-packages' feeds.conf.default
 #git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
 #git clone https://github.com/kenzok8/small.git package/small
-git clone https://github.com/kiddin9/openwrt-packages package/kiddin9
+#git clone https://github.com/kiddin9/openwrt-packages package/kiddin9
+git clone https://github.com/kenzok8/small-package package/small-package
+#git clone https://github.com/bootli/luci-app-turboacc.git package/small-package/luci-app-turboacc
+git clone https://github.com/deplives/luci-app-turboacc.git package/small-package/luci-app-turboacc
+git clone https://github.com/bootli/luci-app-ddns-go.git package/ddns-go
 ##  sed -i '$a src-git dnsfilter https://github.com/kiddin9/luci-app-dnsfilter' feeds.conf.default
 #sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 #sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default

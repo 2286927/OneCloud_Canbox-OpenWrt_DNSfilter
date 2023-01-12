@@ -32,7 +32,8 @@
 #git clone https://github.com/kiddin9/openwrt-packages package/kiddin9
 git clone https://github.com/kenzok8/small-package package/small-package
 #git clone https://github.com/bootli/luci-app-turboacc.git package/small-package/luci-app-turboacc
-git clone https://github.com/deplives/luci-app-turboacc.git package/small-package/luci-app-turboacc
+#git clone https://github.com/imapproxy/luci-app-turboacc.git package/small-package/luci-app-turboacc
+svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-turboacc package/small-package/luci-app-turboacc
 git clone https://github.com/bootli/luci-app-ddns-go.git package/ddns-go
 ##  sed -i '$a src-git dnsfilter https://github.com/kiddin9/luci-app-dnsfilter' feeds.conf.default
 #sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default

@@ -34,7 +34,8 @@
 #git clone https://github.com/kiddin9/openwrt-packages package/kiddin9
 git clone https://github.com/kenzok8/small-package package/small-package
 #git clone https://github.com/bootli/luci-app-turboacc.git package/small-package/luci-app-turboacc
-git clone https://github.com/deplives/luci-app-turboacc.git package/small-package/luci-app-turboacc
+#git clone https://github.com/deplives/luci-app-turboacc.git package/small-package/luci-app-turboacc
+git clone https://github.com/imapproxy/luci-app-turboacc.git package/small-package/luci-app-turboacc
 git clone https://github.com/bootli/luci-app-ddns-go.git package/ddns-go
 #  git clone https://github.com/lisaac/luci-app-dockerman.git package/dockerman
 #git clone -b master --single-branch https://github.com/kiddin9/openwrt-packages/luci-app-turboacc package/small-package/luci-app-turboacc

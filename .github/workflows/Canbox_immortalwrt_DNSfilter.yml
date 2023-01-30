@@ -18,11 +18,11 @@ on:
         description: 'SSH connection to Actions'
         required: false
         default: 'false'
-#  push:
+  push:
 #    branches:
 #      - master
-#    paths:
-#      - 'Config_Files/CanBox_Lienol.config'
+    paths:
+      - 'Config_Files/CanBox_immortalwrt_DNSfilter.config'
 #  schedule:
 #    - cron: 0 2 * * 5
 #  watch:

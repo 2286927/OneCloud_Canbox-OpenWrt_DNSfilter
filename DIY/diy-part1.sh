@@ -41,6 +41,8 @@ svn export --force https://github.com/kiddin9/openwrt-packages/trunk/shortcut-fe
 #
 svn export --force https://github.com/kiddin9/openwrt-packages/trunk/luci-app-rclone package/small-package/luci-app-rclone
 git clone https://github.com/bootli/luci-app-ddns-go.git package/ddns-go
+svn export --force https://github.com/kiddin9/openwrt-packages/trunk/ddns-scripts-dnspod package/small-package/luci-app-ddns
+svn export --force https://github.com/kiddin9/openwrt-packages/trunk/luci-app-ddns package/small-package/luci-app-ddns
 #git clone https://github.com/lisaac/luci-app-dockerman.git package/dockerman
 #  git clone https://github.com/kenzok8/small-package package/small-package
 #  git clone --depth=1 -b luci https://github.com/bootli/luci-app-turboacc.git package/luci-app-turboacc

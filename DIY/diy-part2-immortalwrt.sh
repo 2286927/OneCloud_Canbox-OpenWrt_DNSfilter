@@ -22,3 +22,8 @@ sed -i "s/OpenWrt /洲·Cy build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" pack
 echo -e "#max-ttl=600\nneg-ttl=600\nmin-cache-ttl=3600" >> package/network/services/dnsmasq/files/dnsmasq.conf
 # 修改连接数
 sed -i 's/net.netfilter.nf_conntrack_max=.*/net.netfilter.nf_conntrack_max=165535/g' package/kernel/linux/files/sysctl-nf-conntrack.conf
+# 软库增减
+rm -rf feeds/luci/luci-app-ddns-go
+rm -rf feeds/packages/ddns-go
+svn export --force https://github.com/kiddin9/openwrt-packages/trunk/luci-app-ddns-go feeds/luci/applications/luci-app-ddns-go
+svn export --force https://github.com/kiddin9/openwrt-packages/trunk/ddnsgo feeds/packages/net/ddns-go

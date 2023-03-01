@@ -60,8 +60,8 @@ jobs:
         sudo rm -rf /etc/apt/sources.list.d/* /usr/share/dotnet /usr/local/lib/android /opt/ghc
         sudo -E apt-get -qq update
         #sudo -E apt-get -qq install $(curl -fsSL git.io/depends-ubuntu-latest)
-        #sudo -E apt-get -qq install $(curl -fsSL https://raw.githubusercontent.com/2286927/OpenWrtDependenciesList/main/ImmortalWrtList )
-        sudo -E bash -c 'bash <(curl -s https://build-scripts.immortalwrt.eu.org/init_build_environment.sh)'
+        sudo -E apt-get -qq install $(curl -fsSL https://raw.githubusercontent.com/2286927/OpenWrtDependenciesList/main/ImmortalWrt-master-List )
+        #sudo -E bash -c 'bash <(curl -s https://build-scripts.immortalwrt.eu.org/init_build_environment.sh)'
         #sudo -E snap install clangd --classic
         sudo -E apt-get -qq autoremove --purge
         sudo -E apt-get -qq clean

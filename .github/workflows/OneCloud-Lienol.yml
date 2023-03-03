@@ -156,15 +156,15 @@ jobs:
         cd openwrt
         echo "FIRMWARE=$PWD" >> $GITHUB_ENV
         echo "{status}={success}" >> $GITHUB_OUTPUT
-    - name: Package Armvirt as OpenWrt
-      uses: ophub/flippy-openwrt-actions@main
-      env:
-        OPENWRT_ARMVIRT: openwrt/bin/targets/*/*/*.tar.gz
+#    - name: Package Armvirt as OpenWrt
+#      uses: ophub/flippy-openwrt-actions@main
+#      env:
+#        OPENWRT_ARMVIRT: openwrt/bin/targets/*/*/*.tar.gz
         #KERNEL_REPO_URL: https://github.com/yunxi993/OpenWrt-ARMv8/tree/main
-        PACKAGE_SOC: docker
-        KERNEL_AUTO_LATEST:  true
-        KERNEL_VERSION_NAME: 5.10_5.15_6.1
-        WHOAMI: 洲·Cy
+#        PACKAGE_SOC: docker
+#        KERNEL_AUTO_LATEST:  true
+#        KERNEL_VERSION_NAME: 5.10_5.15_6.1
+#        WHOAMI: 洲·Cy
 
     - name: copy update files
       run: |

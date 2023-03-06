@@ -200,7 +200,7 @@ jobs:
       uses: ncipollo/release-action@v1
       with:
         name: OneCloud ${{ env.PRODUCT_NAME }}${{ env.DATE }}
-        tag: ${{ env.TAG_DATE }}${{ env.FILE_NAME }}
+        tag: OneCloud${{ env.TAG_DATE }}${{ env.FILE_NAME }}
         artifacts: ${{ env.FIRMWARE }}/*
         allowUpdates: true
         removeArtifacts: true

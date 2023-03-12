@@ -207,6 +207,6 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         body: |
           * 玩客云固件OneCloud
-          * Lienol-2203
-          * PS rom
+          * lede-master
+          * 
           * Default username: root

@@ -16,3 +16,11 @@ sed -i 's/OpenWrt/CM520-79F-Two/g' package/base-files/files/bin/config_generate
 #sed -i 's/PKG_HASH:=.*/PKG_HASH:=2866a4ef9193cca0a9f0fe528a0dea00c13cb0fd714bf388a0300cb6f3639b3b/g' feeds/packages/net/zerotier/Makefile
 #rm -rf feeds/packages/net/zerotier
 #cp -rf $GITHUB_WORKSPACE/general/zerotier feeds/packages/net
+####### Modify the version number
+# sed -i '/DISTRIB_DESCRIPTION/d' package/base-files/files/etc/openwrt_release
+# echo "DISTRIB_DESCRIPTION='ImmortalWrt $('%V')'" >> package/base-files/files/etc/openwrt_release
+# sed -i "s/ImmortalWrt /\洲\·\C\y \build $(TZ=UTC-8 date "+%Y.%m.%d") @ ImmortalWrt /g" package/base-files/files/etc/openwrt_release
+###
+sed -i '/DISTRIB_DESCRIPTION/d' package/base-files/files/etc/openwrt_release
+echo "DISTRIB_DESCRIPTION='OpenWrt $('%V')'" >> package/base-files/files/etc/openwrt_release
+sed -i "s/OpenWrt /\洲\·\C\y \build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/base-files/files/etc/openwrt_release

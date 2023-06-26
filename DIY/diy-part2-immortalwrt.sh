@@ -38,11 +38,11 @@ rm -rf feeds/kenzo/luci-app-mosdns
 # firewall3/4 的luci-app-socat
 ####################################
 #
-svn export --force https://github.com/chenmozhijin/luci-app-socat/trunk/luci-app-socat feeds/luci/applications/luci-app-socat
+#svn export --force https://github.com/chenmozhijin/luci-app-socat/trunk/luci-app-socat feeds/luci/applications/luci-app-socat
 #
 ####################################
 # firewall3/4 的luci-app-socat of End
 ####################################
 #
-svn export --force https://github.com/kiddin9/openwrt-packages/trunk/luci-app-rclone feeds/luci/applications/luci-app-rclone
+#svn export --force https://github.com/kiddin9/openwrt-packages/trunk/luci-app-rclone feeds/luci/applications/luci-app-rclone
 #

@@ -30,7 +30,7 @@ sed -i 's/net.netfilter.nf_conntrack_max=.*/net.netfilter.nf_conntrack_max=16553
 # rm -rf feeds/luci/luci-app-ddns-go
 # rm -rf feeds/packages/ddns-go
 rm -rf feeds/kenzo/luci-app-mosdns
-rm -rf feeds/luci/luci-app-socat
+# rm -rf feeds/luci/luci-app-socat
 # svn export --force https://github.com/kiddin9/openwrt-packages/trunk/luci-app-ddns-go feeds/luci/applications/luci-app-ddns-go
 # svn export --force https://github.com/kiddin9/openwrt-packages/trunk/ddnsgo feeds/packages/net/ddns-go
 
@@ -39,7 +39,7 @@ rm -rf feeds/luci/luci-app-socat
 # firewall3/4 的luci-app-socat
 ####################################
 #
-svn export --force https://github.com/chenmozhijin/luci-app-socat/trunk/luci-app-socat feeds/luci/applications/luci-app-socat
+#svn export --force https://github.com/chenmozhijin/luci-app-socat/trunk/luci-app-socat feeds/luci/applications/luci-app-socat
 #
 ####################################
 # firewall3/4 的luci-app-socat of End

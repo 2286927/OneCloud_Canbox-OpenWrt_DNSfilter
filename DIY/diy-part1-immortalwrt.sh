@@ -75,3 +75,15 @@ git clone https://github.com/kenzok8/small feeds/small
 
 #Add The Theme：luci-theme-opentomcat
 #git clone https://github.com/Cosme927/luci-theme-opentomcat package/luci-theme-opentomcat
+
+#
+####################################
+# firewall3/4 的luci-app-socat
+####################################
+#
+rm -rf feeds/luci/luci-app-socat
+svn export --force https://github.com/chenmozhijin/luci-app-socat/trunk/luci-app-socat feeds/luci/applications/luci-app-socat
+#
+####################################
+# firewall3/4 的luci-app-socat of End
+####################################

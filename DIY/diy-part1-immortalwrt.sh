@@ -30,8 +30,15 @@
 # sed -i '$a src-git dnsfilter https://github.com/kiddin9/luci-app-dnsfilter' feeds.conf.default
 # sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 # sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
-git clone https://github.com/kenzok8/openwrt-packages feeds/kenzo
-git clone https://github.com/kenzok8/small feeds/small
+git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
+git clone https://github.com/kenzok8/small.git package/small
+#rm -rf package/openwrt-packages/luci-app-adguardhome
+rm -rf package/openwrt-packages/adguardhome
+rm -rf package/openwrt-packages/luci-app-ddns-go
+rm -rf package/openwrt-packages/ddns-go
+rm -rf package/small/xray-core
+rm -rf package/small/sing-box
+rm -rf package/small/mosdns
 #git clone https://github.com/kenzok8/small-package feeds/small-package
 #git clone https://github.com/kiddin9/openwrt-packages package/kiddin9
 #git clone https://github.com/bootli/luci-app-turboacc.git package/small-package/luci-app-turboacc
@@ -87,3 +94,4 @@ svn export --force https://github.com/chenmozhijin/luci-app-socat/trunk/luci-app
 ####################################
 # firewall3/4 的luci-app-socat of End
 ####################################
+rm -rf feeds/packages/net/adguardhome

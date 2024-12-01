@@ -40,6 +40,7 @@ rm -rf package/small/xray-core
 rm -rf package/small/sing-box
 rm -rf package/small/mosdns
 rm -rf package/small/naiveproxy
+rm -rf package/small/lua-neturl
 #git clone https://github.com/kenzok8/small-package feeds/small-package
 #git clone https://github.com/kiddin9/openwrt-packages package/kiddin9
 #git clone https://github.com/bootli/luci-app-turboacc.git package/small-package/luci-app-turboacc

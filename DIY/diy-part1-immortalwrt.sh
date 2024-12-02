@@ -36,6 +36,7 @@ git clone https://github.com/kenzok8/small.git package/small
 rm -rf package/openwrt-packages/adguardhome
 rm -rf package/openwrt-packages/luci-app-ddns-go
 rm -rf package/openwrt-packages/ddns-go
+rm -rf package/openwrt-packages/luci-app-aliyundrive-webdav
 rm -rf package/small/xray-core
 rm -rf package/small/sing-box
 rm -rf package/small/mosdns
